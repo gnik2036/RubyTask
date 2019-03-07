@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_03_07_071330) do
+ActiveRecord::Schema.define(version: 2019_03_07_071920) do
+
+  create_table "locations", force: :cascade do |t|
+    t.string "lat"
+    t.string "long"
+    t.integer "trip_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["trip_id"], name: "index_locations_on_trip_id"
+  end
 
   create_table "trips", force: :cascade do |t|
     t.string "nameOfDriver"
