@@ -8,3 +8,6 @@
 Trip.create(nameOfDriver: 'shady' , status: 'on')
 
 Location.create(lat: '1556' , long: '2891456' , trip_id: 1)
+
+Location.create(lat: '1556' , long: '2891456' , trip_id: 1)
+Location.create(lat: '1556' , long: '2891456' , trip_id: 1)
